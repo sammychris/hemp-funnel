@@ -7,6 +7,12 @@
   min-height: 100vh; */
 }
 
+.brands {
+  background: #e1e1e1;
+  display: flex;
+  justify-content: space-around;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {

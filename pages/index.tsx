@@ -4,6 +4,7 @@ import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import Header from "@/components/Header";
 import HeroBanner from "@/components/HeroBanner";
+import Brand from "@/components/Brand";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,26 @@ export default function Home() {
       <main className={styles.main}>
         <Header />
         <HeroBanner />
+        <div className={styles.brands}>
+          <Brand
+            src="/images/brand-1.png"
+            text="All Products are grown, processed and shipped in the USA"
+          />
+          <Brand
+            src="/images/brand-2.png"
+            text="Our CBD Products are Hemp-Derived and contain <0.3% Delta-9 THC."
+          />
+          <Brand
+            src="/images/brand-3.png"
+            text="All Products from blazed hemp come with a Risk-Free
+            100% Money-Back Guarantee"
+          />
+          <Brand
+            src="/images/brand-4.png"
+            text="Premium Ingredients make premium tasting flavors
+            with no bad aftertaste."
+          />
+        </div>
       </main>
     </>
   );

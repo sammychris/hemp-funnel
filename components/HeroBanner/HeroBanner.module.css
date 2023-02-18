@@ -2,14 +2,7 @@
   height: 900px;
   width: 100%;
   background: url("/images/hero-banner.png");
-}
-
-.header {
-  font-family: "Audiowide";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 25px;
-  letter-spacing: 0.09em;
-  color: #000000;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

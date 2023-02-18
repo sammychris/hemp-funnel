@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #ffb55f 0%, #fe7a00 100%);
+  border: 1px solid #131d00;
+  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.39);
+  border-radius: 10px;
+
+  font-family: "Audiowide";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.09em;
+
+  height: 74.37451171875px;
+  width: 544px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

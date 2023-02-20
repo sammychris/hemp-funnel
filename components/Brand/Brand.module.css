@@ -1,10 +1,12 @@
 .container {
-  width: 331px;
+  width: 100%;
+  max-width: 331px;
   height: 383px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .content {
@@ -15,6 +17,37 @@
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.09em;
-
   color: #000000;
+}
+
+/* Mobile */
+/* @media (max-width: 780px) {
+  .container {
+    height: 691px;
+    width: 100%;
+  }
+
+  .btnContainer {
+    bottom: 20px;
+  }
+}
+*/
+
+@media (max-width: 700px) {
+  .container {
+    width: 50%;
+  }
+}
+
+@media (max-width: 393px) {
+  .container {
+    width: 50%;
+    height: unset;
+    padding: 15px 10px;
+  }
+  .container img {
+    height: 118px;
+    width: 100%;
+    max-width: 111px;
+  }
 }

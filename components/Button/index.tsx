@@ -1,11 +1,7 @@
 import styles from "./Button.module.css";
 
 const Button = ({ text }: { text: string }) => {
-  return (
-    <div className={styles.container}>
-      <button className={styles.btn}>{text}</button>
-    </div>
-  );
+  return <button className={styles.btn}>{text}</button>;
 };
 
 export default Button;

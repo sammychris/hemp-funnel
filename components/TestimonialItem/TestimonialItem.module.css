@@ -2,6 +2,7 @@
   display: flex;
   width: 530px;
   text-align: left;
+  margin: auto;
 }
 
 .media {
@@ -49,6 +50,13 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.09em;
-
   color: #000000;
+}
+
+@media (max-width: 479px) {
+  .testimonial {
+    flex-direction: column;
+    width: 253px;
+    margin: auto;
+  }
 }

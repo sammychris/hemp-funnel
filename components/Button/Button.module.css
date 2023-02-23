@@ -20,3 +20,10 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 479px) {
+  .btn {
+    font-size: 16px;
+    width: 295px;
+  }
+}

@@ -17,3 +17,9 @@
   letter-spacing: 0.09em;
   color: #000000;
 }
+
+@media (max-width: 479px) {
+  .container {
+    height: unset;
+  }
+}

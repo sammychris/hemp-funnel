@@ -1,23 +1,23 @@
 import Image from "next/image";
-import styles from "./Testimonial.module.css";
+import styles from "./TestimonialItem.module.css";
 import { Rate } from "antd";
 import React from "react";
 
-interface Iprops {
+type DATA = {
+  id: number;
   src: string;
   author: string;
   rating: number;
   title: string;
   description: string;
+};
+
+interface Iprops {
+  data: DATA;
 }
 
-const Testimonial: React.FC<Iprops> = ({
-  src,
-  author,
-  rating,
-  title,
-  description,
-}) => {
+const TestimonialItem: React.FC<Iprops> = ({ data }) => {
+  const { src, author, rating, title, description } = data;
   return (
     <div className={styles.testimonial}>
       <div className={styles.media}>
@@ -39,4 +39,4 @@ const Testimonial: React.FC<Iprops> = ({
   );
 };
 
-export default Testimonial;
+export default TestimonialItem;

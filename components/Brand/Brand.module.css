@@ -39,7 +39,7 @@
   }
 }
 
-@media (max-width: 393px) {
+@media (max-width: 479px) {
   .container {
     width: 50%;
     height: unset;

@@ -1,0 +1,80 @@
+.testimonials {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 100%;
+  background: #ececec;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+
+.testimonialsCounts {
+  width: 90%;
+  max-width: 1370px;
+  border-bottom: 1px solid #9a9a9a;
+  margin: 10px auto 44px auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.testimonialList {
+  width: 80%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.lessThan {
+  position: absolute;
+  font-size: 60px;
+  top: 250px;
+  left: 20px;
+  cursor: pointer;
+}
+
+.greaterThan {
+  position: absolute;
+  font-size: 60px;
+  right: 20px;
+  top: 250px;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 479px) {
+  .testimonialsCounts {
+    flex-direction: column;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: 0.09em;
+    color: #000000;
+    align-items: center;
+  }
+
+  .testimonialsCounts div {
+    display: flex;
+    align-items: center;
+  }
+
+  .lessThan {
+    top: 350px;
+    left: 10px;
+    font-size: 40px;
+  }
+
+  .greaterThan {
+    top: 350px;
+    right: 10px;
+    font-size: 40px;
+  }
+
+  .testimonialList {
+    width: unset;
+  }
+}

@@ -36,9 +36,10 @@
   }
 }
 
-@media (max-width: 393px) {
+@media (max-width: 479px) {
   .bgImage {
     background: url("/images/hero-banner-mobile.png");
     background-position: center;
+    background-size: cover;
   }
 }

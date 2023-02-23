@@ -5,12 +5,13 @@ import HeroBanner from "@/components/HeroBanner";
 import Brand from "@/components/Brand";
 import { useState } from "react";
 import Pricing from "@/components/Pricing";
-import Testimonial from "@/components/Testimonial";
+import Testimonial from "@/components/TestimonialItem";
 import { FaGreaterThan, FaLessThan } from "react-icons/fa";
 import { ImPlus } from "react-icons/im";
 import Button from "@/components/Button";
 import Footer from "@/components/Footer";
 import { Rate } from "antd";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   const [viewItem, setViewItem] = useState(0);
@@ -44,7 +45,7 @@ export default function Home() {
         <div>
           <Pricing />
         </div>
-        <div className={styles.testimonials}>
+        {/* <div className={styles.testimonials}>
           <h3>What Our Customers Say</h3>
           <div className={styles.testimonialsCounts}>
             <div>Real Reviews from Real Costumers</div>
@@ -84,7 +85,8 @@ export default function Home() {
               <FaGreaterThan />
             </div>
           </div>
-        </div>
+        </div> */}
+        <Testimonials />
         <div className={styles.faqSection}>
           <h3>CBD GUMMIES FAQS</h3>
           <div className={styles.faqList}>

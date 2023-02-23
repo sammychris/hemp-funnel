@@ -39,7 +39,8 @@
 }
 
 .testimonialsCounts {
-  width: 1370px;
+  width: 90%;
+  max-width: 1370px;
   border-bottom: 1px solid #9a9a9a;
   margin: 10px auto 44px auto;
   display: flex;
@@ -83,7 +84,8 @@
 }
 
 .faqList {
-  width: 1121px;
+  width: 90%;
+  max-width: 1121px;
   background: #000000;
   font-family: "Audiowide";
   font-style: normal;
@@ -139,9 +141,55 @@
   }
 }
 
-@media (max-width: 393px) {
+@media (max-width: 479px) {
   .emotions {
     height: 759px;
     background-image: url("/images/emotions-mobile.png");
+  }
+
+  .faqSection h3 {
+    text-align: left;
+    font-family: Audiowide;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.09em;
+    text-align: center;
+  }
+
+  .faqList {
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: unset;
+  }
+
+  .faqLeft {
+    display: flex;
+    align-items: center;
+  }
+  .faqLeft h3 {
+    text-align: left;
+  }
+  .faqLeft img {
+    margin-right: 10px;
+    height: 35px;
+    width: 31px;
+  }
+
+  .testimonialsCounts {
+    flex-direction: column;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: 0.09em;
+    color: #000000;
+    align-items: center;
+  }
+
+  .testimonialsCounts div {
+    display: flex;
+    align-items: center;
   }
 }

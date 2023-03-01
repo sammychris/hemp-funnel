@@ -14,6 +14,7 @@ const Pricing = () => {
             height={232}
             width={159}
             alt=""
+            className={styles.oneSample}
           />
           <h3 className={styles.price}>Free</h3>
           <div className={styles.freeLabel}>
@@ -36,7 +37,13 @@ const Pricing = () => {
         <h4 className={styles.promo}>
           BUY 6 SAMPLES - GET <span>{`50% OFF + FREE SHIPPING`}</span>
         </h4>
-        <Image src={"/images/package-3.png"} width={379} height={247} alt="" />
+        <Image
+          src={"/images/package-3.png"}
+          width={379}
+          height={247}
+          alt=""
+          className={styles.manySample}
+        />
         <ul>
           <li>
             <BsCheckLg /> All Natural Ingredients
@@ -78,6 +85,7 @@ const Pricing = () => {
             width={379}
             height={247}
             alt=""
+            className={styles.fewSample}
           />
           <h3 className={styles.price}>
             $6.50<span>/Sample</span>

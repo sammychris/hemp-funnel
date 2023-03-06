@@ -105,3 +105,54 @@ a {
     color-scheme: dark;
   }
 }
+
+.alice-carousel__next-btn {
+  font-size: 60px;
+  position: absolute;
+  right: -100px;
+  top: 100px;
+  font-weight: bolder;
+  text-align: right !important;
+  width: 100% !important;
+  color: #000;
+}
+
+.alice-carousel__prev-btn {
+  font-size: 60px;
+  position: absolute;
+  left: -100px;
+  top: 100px;
+  font-weight: bolder;
+  text-align: left !important;
+  width: 100% !important;
+}
+
+.alice-carousel__prev-btn p {
+  color: #000;
+}
+
+.alice-carousel__next-btn p {
+  color: #000;
+}
+
+@media (max-width: 900px) {
+  .alice-carousel__next-btn {
+    right: -50px;
+  }
+
+  .alice-carousel__prev-btn {
+    left: -50px;
+  }
+}
+
+@media (max-width: 479px) {
+  .alice-carousel__next-btn {
+    right: 0px;
+    top: 150px;
+  }
+
+  .alice-carousel__prev-btn {
+    left: 0;
+    top: 150px;
+  }
+}

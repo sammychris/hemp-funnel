@@ -1,5 +1,6 @@
 .inputGroup {
   width: 90%;
+  max-width: 450px;
   display: flex;
   justify-content: end;
   margin: 10px auto;
@@ -9,12 +10,12 @@
 .label {
   font-weight: 700;
   font-family: "Square Sans Text VF", "Square Sans Text", Arial, sans-serif;
-  font-size: 22px;
+  font-size: 16px;
   margin-right: 10px;
 }
 
 .formControl {
-  height: 48px;
+  height: 30px;
   max-width: 300px;
   width: 100%;
   padding: 10px;
@@ -26,10 +27,10 @@
 }
 
 @media (max-width: 480px) {
-    .inputGroup {
-        width: 100%;
-        justify-content: center;
-      }
+  .inputGroup {
+    width: 100%;
+    justify-content: center;
+  }
   .label {
     margin-right: 0;
     display: none;

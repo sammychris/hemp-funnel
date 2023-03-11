@@ -47,6 +47,8 @@ export default function Home() {
 
         <CarouselTestimonials />
 
+        {/* <div id="payment-element"> */}
+
         <div className={styles.faqSection}>
           <h3>CBD GUMMIES FAQS</h3>
           <div className={styles.faqList}>

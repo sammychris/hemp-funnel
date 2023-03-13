@@ -19,6 +19,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "containers/OrderFormContainer.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "containers/OrderFormContainer.tsx"],
   "exclude": ["node_modules"]
 }

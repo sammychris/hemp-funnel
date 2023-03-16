@@ -7,7 +7,7 @@ const HeroBanner = () => {
     <div className={styles.container}>
       <div className={styles.bgImage}>
         <div className={styles.btnContainer}>
-          <Button text="CLAIM YOUR FREE SAMPLE" />
+          <Button text="CLAIM YOUR FREE SAMPLE" color="#fff" />
         </div>
       </div>
     </div>

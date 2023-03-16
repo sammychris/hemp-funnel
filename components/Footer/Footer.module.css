@@ -6,69 +6,32 @@
 .footerContent {
   max-width: 1337px;
   width: 100%;
-  height: 300px;
-  display: flex;
   margin: auto;
   padding: 40px 0 0 0;
 }
 
-.footerContent div {
-  width: 23.333%;
-}
-.footerContent div:nth-child(1) {
-  width: 30%;
-}
-
-.footerContent div ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.footerContent div ul li {
-  font-family: "Poppins";
+.footerContent p {
+  font-family: "Ubuntu";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 18px;
-  line-height: 27px;
-  /* identical to box height */
+  line-height: 21px;
+  text-align: center;
   letter-spacing: 0.09em;
-  margin: 10px 0;
-  color: #fff;
-}
-
-.footerContent h2 {
-  /* font-family: "Squada One";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 70px;
-  line-height: 74px;
-  color: #454b1b;
-  background-image: url("/images/footer-logo.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 340px;
-  height: 60px;
-  margin: auto; */
-
-  font-family: "Audiowide";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 46px;
-  line-height: 59px;
-  letter-spacing: 0.09em;
-
   color: #ffffff;
 }
 
-.footerContent h3 {
-  font-family: "Poppins";
+.footerContent div {
+  font-family: "Ubuntu";
   font-style: normal;
-  font-weight: 800;
-  font-size: 22px;
-  line-height: 33px;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 24px;
+  text-align: center;
   letter-spacing: 0.09em;
-  color: #fff;
+  color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 10px;
 }
 
 .copy {
@@ -105,23 +68,18 @@
 
 @media only screen and (max-width: 768px) {
   .footerContent {
-    width: 100%;
-    height: unset;
-    display: unset;
-    text-align: center;
+    padding: 10px;
   }
-  .footerContent h2 {
-    padding-top: 20px;
+  .footerContent p {
+    font-size: 12px;
   }
-  .footerContent h3 {
-    font-size: 20px;
-  }
-  .footerContent div:nth-child(1) {
-    width: 100%;
+  .footerContent div {
+    font-size: 18px;
+    padding: 30px 0 10;
   }
 
-  .footerContent div {
-    width: 100%;
-    margin: 0 0 40px 0;
+  .copy {
+    font-size: 12px;
+    padding-bottom: 0;
   }
 }

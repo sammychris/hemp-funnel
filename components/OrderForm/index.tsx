@@ -17,15 +17,16 @@ type FormValues = {
   state: string;
   city: string;
   zip: string;
+  billing_zip: string;
 };
 
 type BillingValues = {
-  line1: "";
-  line2: "";
-  city: "";
-  state: "";
-  zip: "";
-  country: "";
+  line1: string;
+  line2: string;
+  city: string;
+  state: string;
+  zip: string;
+  country: string;
 };
 
 // const validationSchema = Yup.object({
@@ -185,8 +186,15 @@ const OrderForm: React.FC<OrderProps> = ({
               <legend>Payment</legend>
               {/* <Input label="Address Name" name="line1" required type="text" />
           <Input label="City" name="city" required type="text" />
-          <Input label="State" name="state" required type="text" />
-          <Input label="Zip Code" name="zip" required type="number" /> */}
+          <Input label="State" name="state" required type="text" />*/}
+              <Input
+                label="Billing Zip Code"
+                name="billing_zip"
+                required
+                type="number"
+                value={formData.billing_zip}
+                onChange={handleInputChange}
+              />
               <div className={styles.adjustWidth}>
                 <div id="payment-element">
                   <PaymentForm
@@ -214,9 +222,10 @@ const OrderForm: React.FC<OrderProps> = ({
                       intent: "STORE",
                       billingContact: {
                         addressLines: [
-                          billing.line1 ? billing.line1 : "",
+                          formData.line1 ? formData.line1 : "",
                           billing.line2 ? billing.line2 : "",
                         ],
+                        zip: formData.billing_zip,
                         familyName: "",
                         givenName: "",
                         email: "",

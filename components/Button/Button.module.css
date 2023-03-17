@@ -1,3 +1,9 @@
+.txtContainer {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
 .btn {
   box-sizing: border-box;
   background: linear-gradient(180deg, #ffb55f 0%, #fe7a00 100%);
@@ -14,16 +20,62 @@
   letter-spacing: 0.09em;
 
   height: 74.37451171875px;
-  width: 544px;
+  width: 90%;
+  max-width: 544px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.txt {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 26px;
+  letter-spacing: 0.09em;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.line {
+  height: 2px;
+  width: 143px;
+  background: #fff;
+}
+
+@media (max-width: 780px) {
+  .line {
+    height: 2px;
+    width: 100px;
+    background: #fff;
+  }
+}
+
 @media (max-width: 479px) {
   .btn {
     font-size: 16px;
-    width: 295px;
+    height: 45px;
+    width: 90%;
+    max-width: 344px;
+    border-radius: 10px;
+  }
+  .txtContainer {
+    margin-left: unset;
+  }
+  .txt {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 5px;
+  }
+
+  .line {
+    height: 2px;
+    width: 80px;
+    background: #fff;
   }
 }

@@ -9,16 +9,20 @@ const Pricing = () => {
       <div className={styles.priceContain}>
         <div className={styles.pricing}>
           <h4 className={styles.promo}>GET 1 SAMPLE</h4>
-          <Image
-            src={"/images/package-1.png"}
-            height={232}
-            width={159}
-            alt=""
-            className={styles.oneSample}
-          />
-          <h3 className={styles.price}>Free</h3>
-          <div className={styles.freeLabel}>
-            JUST PAY $6.99 SHIPPING+HANDLING
+          <div className={styles.responsive}>
+            <Image
+              src={"/images/package-1.png"}
+              height={232}
+              width={159}
+              alt=""
+              className={styles.oneSample}
+            />
+            <div>
+              <h3 className={styles.price}>Free</h3>
+              <div className={styles.freeLabel}>
+                JUST PAY $6.99 SHIPPING+HANDLING
+              </div>
+            </div>
           </div>
           <button className={styles.btn}>ADD TO CART</button>
           <div className={styles.secure}>
@@ -37,28 +41,32 @@ const Pricing = () => {
         <h4 className={styles.promo}>
           BUY 6 SAMPLES - GET <span>{`50% OFF + FREE SHIPPING`}</span>
         </h4>
-        <Image
-          src={"/images/package-3.png"}
-          width={379}
-          height={247}
-          alt=""
-          className={styles.manySample}
-        />
-        <ul>
-          <li>
-            <BsCheckLg /> All Natural Ingredients
-          </li>
-          <li>
-            <BsCheckLg /> Premium Flavor
-          </li>
-          <li>
-            <BsCheckLg /> Free Shipping
-          </li>
-        </ul>
-        <h3 className={styles.price}>
-          $4.99<span>/Sample</span>
-        </h3>
-        <p className={styles.save}>YOU SAVE $30.00</p>
+        <div className={styles.responsive}>
+          <Image
+            src={"/images/package-3.png"}
+            width={379}
+            height={247}
+            alt=""
+            className={styles.manySample}
+          />
+          <div>
+            <ul>
+              <li>
+                <BsCheckLg /> All Natural Ingredients
+              </li>
+              <li>
+                <BsCheckLg /> Premium Flavor
+              </li>
+              <li>
+                <BsCheckLg /> Free Shipping
+              </li>
+            </ul>
+            <h3 className={styles.price}>
+              $4.99<span>/Sample</span>
+            </h3>
+            <p className={styles.save}>YOU SAVE $30.00</p>
+          </div>
+        </div>
         <button className={styles.btnBest}>ADD TO CART</button>
         <div className={styles.secure}>
           <span style={{ fontSize: 25 }}>
@@ -80,17 +88,21 @@ const Pricing = () => {
           <h4 className={styles.promo}>
             BUY 3 SAMPLES - GET <span>{"35% OFF"}</span>
           </h4>
-          <Image
-            src={"/images/package-2.png"}
-            width={379}
-            height={247}
-            alt=""
-            className={styles.fewSample}
-          />
-          <h3 className={styles.price}>
-            $6.50<span>/Sample</span>
-          </h3>
-          <p className={styles.save}>YOU SAVE $30.00</p>
+          <div className={styles.responsive}>
+            <Image
+              src={"/images/package-2.png"}
+              width={379}
+              height={247}
+              alt=""
+              className={styles.fewSample}
+            />
+            <div>
+              <h3 className={styles.price}>
+                $6.50<span>/Sample</span>
+              </h3>
+              <p className={styles.save}>YOU SAVE $30.00</p>
+            </div>
+          </div>
           <button className={styles.btn}>ADD TO CART</button>
           <div className={styles.secure}>
             <span style={{ fontSize: 25 }}>

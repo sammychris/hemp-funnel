@@ -44,10 +44,10 @@ export default function Home() {
           <div className={styles.heading2}>BLAZED HEMP IS USED FOR</div>
           <div className={styles.btnContainer}>
             <div className={styles.paragraph}>
-              Millions of people trust our gummies to help them handle anything
+              {`Millions of people trust our gummies to help them handle anything
               life throws their way. From pain to everyday stress or sleepless
               nights, we're here to help - with holistic hemp done right. Find
-              the perfect product for you!
+              the perfect product for you!`}
             </div>
             <Button text="CLAIM YOUR FREE SAMPLE" color="#000" />
           </div>

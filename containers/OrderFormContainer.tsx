@@ -10,15 +10,16 @@ type FormValues = {
   state: string;
   city: string;
   zip: string;
+  billing_zip: string;
 };
 
 type BillingValues = {
-  line1: "";
-  line2: "";
-  city: "";
-  state: "";
-  zip: "";
-  country: "";
+  line1: string;
+  line2: string;
+  city: string;
+  state: string;
+  zip: string;
+  country: string;
 };
 
 const OrderFormContainer = () => {
@@ -32,6 +33,7 @@ const OrderFormContainer = () => {
     city: "",
     state: "",
     zip: "",
+    billing_zip: "",
   });
 
   const [billing, setBilling] = useState<BillingValues>({
@@ -58,7 +60,8 @@ const OrderFormContainer = () => {
     formData.line1 !== "" &&
     formData.city !== "" &&
     formData.state !== "" &&
-    formData.zip !== "";
+    formData.zip !== "" &&
+    formData.billing_zip !== "";
 
   const createPayment = async (token: string) => {
     const body = {

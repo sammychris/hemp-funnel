@@ -14,12 +14,67 @@
 }
 
 .emotions {
-  height: 638px;
+  height: 900px;
+  width: 100%;
   background-repeat: no-repeat;
   background-image: url("/images/emotions.png");
   background-size: cover;
   margin: 10px 0 100px 0;
   background-position: center;
+  position: relative;
+}
+
+.emotions1 {
+  height: 900px;
+  background-repeat: no-repeat;
+  background-image: url("/images/emotions1.png");
+  background-size: cover;
+  margin: 10px 0 100px 0;
+  background-position: center;
+  position: relative;
+}
+
+.discount {
+  width: 90%;
+  max-width: 1121px;
+  margin: auto;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.discountContent {
+  width: 810px;
+}
+
+.discount h2 {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 55px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  position: relative;
+  left: -100px;
+}
+
+.discount p {
+  font-family: Ubuntu;
+  font-size: 33px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 20px;
+}
+
+.discount .icons {
+  width: 550px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .line {
@@ -110,26 +165,111 @@
 .faqLeft img {
   margin-right: 17px;
 }
-
+/* 
 .btnContainer {
+  position: relative;
   display: flex;
   justify-content: center;
   margin-top: 50px;
+} */
+
+.faqSection .btnContainer {
+  width: 100%;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emotions .heading2 {
+  width: 350px;
+  margin: auto;
+
+  font-family: "Audiowide";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 48px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.emotions .btnContainer .paragraph {
+  width: 90%;
+  max-width: 1093px;
+  font-family: Ubuntu;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.emotions .btnContainer {
+  width: 100%;
+  position: absolute;
+  bottom: -100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emotions1 .btnContainer {
+  width: 100%;
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
 }
 
 /* Mobile */
 @media (max-width: 900px) {
   .emotions {
-    height: 400px;
+    height: 700px;
     background-repeat: no-repeat;
     background-image: url("/images/emotions.png");
     background-size: contain;
     background-position: center;
-    margin: 10px 0;
   }
 
-  .line {
-    border: 0;
+  .emotions .btnContainer .paragraph {
+    font-size: 18px;
+  }
+  .emotions1 {
+    height: 600px;
+  }
+  .emotions1 .btnContainer {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: unset;
+  }
+
+  .discount {
+    width: 90%;
+    padding: 50px 0;
+  }
+
+  .discountContent {
+    width: 600px;
+  }
+
+  .discount h2 {
+    font-size: 30px;
+    left: -100px;
+  }
+
+  .discount p {
+    font-size: 22px;
+  }
+
+  .discount .icons {
+    width: 80%;
+    max-width: 550px;
   }
 }
 
@@ -139,12 +279,55 @@
     width: 100%;
     flex-wrap: wrap;
   }
+
+  .discount img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .discountContent img {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 @media (max-width: 479px) {
+  .discount img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .discountContent img {
+    width: 40px;
+    height: 40px;
+  }
+  .discount h2 {
+    font-size: 18px;
+    left: -50px;
+    line-height: unset;
+  }
+
+  .discount p {
+    font-size: 14px;
+    line-height: unset;
+    padding: 10px;
+  }
+
   .emotions {
     height: 759px;
     background-image: url("/images/emotions-mobile.png");
+  }
+
+  .emotions .heading2 {
+    display: none;
+  }
+  .emotions .paragraph {
+    display: none;
+  }
+
+  .emotions1 {
+    height: 760px;
+    background-image: url("/images/emotions-mobile1.png");
   }
 
   .faqSection h3 {

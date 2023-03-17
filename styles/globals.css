@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide&display=swap");
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Ubuntu Regular"), local("Ubuntu-Regular"),
+    url("/fonts/Ubuntu-R.ttf") format("truetype");
+}
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;

@@ -57,12 +57,8 @@ const CarouselTestimonials = () => {
     0: {
       items: 1,
     },
-    1024: {
-      items: 2,
-      itemsFit: "contain",
-    },
     1250: {
-      items: 3,
+      items: 1,
       itemsFit: "contain",
     },
   };

@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import { Formik, Form, Field, ErrorMessage } from "formik";
-import * as Yup from "yup";
-import { CreditCard, PaymentForm, Ach } from "react-square-web-payments-sdk";
+import { CreditCard, PaymentForm } from "react-square-web-payments-sdk";
 import {
   TokenResult,
   VerifyBuyerResponseDetails,
